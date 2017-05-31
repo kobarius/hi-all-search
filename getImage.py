@@ -1,10 +1,9 @@
 import webbrowser
-import urllib2
 import time
 
 def showGoogleImgSearch(word):
     url = "https://www.google.co.jp/search?q=" + word + "&tbm=isch"
-    webbrowser.open(url, new=0)
+    webbrowser.open(url)
 
 if __name__ == "__main__":
     showGoogleImgSearch("robot")
