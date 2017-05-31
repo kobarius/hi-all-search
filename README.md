@@ -9,7 +9,7 @@ search all you say
 import getImage
 words = ['tomato', 'gorira', 'iphone', 'shimane']
 for word in words:
-    showGoogleImgSearch(word)
+    getImage.showGoogleImgSearch(word)
 ```
 
 # 処理の流れ
@@ -26,4 +26,5 @@ word
 # ひとりごと
 - 早く実装したい → google画像検索の画面でよくね?
 - 誰か音声認識部分やって
-
+- python2 でも 3でも動くと思うたぶん
+- 基本python3系にしてほしい
