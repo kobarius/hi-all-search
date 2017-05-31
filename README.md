@@ -30,5 +30,5 @@ word
 - 基本python3系にしてほしい
 
 # environment
-python3.3 or later
-chrome (maybe any web browser is ok)
+- python3.3 or later
+- chrome (maybe any web browser is ok)
