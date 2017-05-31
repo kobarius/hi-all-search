@@ -28,3 +28,7 @@ word
 - 誰か音声認識部分やって
 - python2 でも 3でも動くと思うたぶん
 - 基本python3系にしてほしい
+
+# environment
+python3.3 or later
+chrome (maybe any web browser is ok)
