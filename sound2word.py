@@ -51,5 +51,5 @@ if __name__ == '__main__':
     VOICE_IN_PATH = inifile['settings']['VOICE_IN_PATH']
     listen(5,VOICE_IN_PATH)
     message = recognize(API_KEY,VOICE_IN_PATH).encode('utf-8')
-    print(message)
+    print(message.decode('utf-8'))
 
