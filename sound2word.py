@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import ConfigParser
+import configparser
 
 import requests
 import json
 import os
-#import commands
-#import time
-
-#LISTEN_SECONDS = 5 
-#VOICE_IN_PATH = './tmp.flac'
 
 # 録音
 def listen(seconds,VOICE_IN_PATH):
@@ -49,11 +44,11 @@ def recognize(API_KEY,VOICE_IN_PATH):
 
 if __name__ == '__main__':
 
-    inifile = ConfigParser.SafeConfigParser()
+    inifile = configparser.ConfigParser()
     inifile.read('./config.ini')
 
-    API_KEY = inifile.get('settings', 'GOOGLE_API_KEY')
-    VOICE_IN_PATH = inifile.get('settings', 'VOICE_IN_PATH')
+    API_KEY = inifile['settings']['GOOGLE_API_KEY']
+    VOICE_IN_PATH = inifile['settings']['VOICE_IN_PATH']
     listen(5,VOICE_IN_PATH)
     message = recognize(API_KEY,VOICE_IN_PATH).encode('utf-8')
     print(message)
