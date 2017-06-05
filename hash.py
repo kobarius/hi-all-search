@@ -28,7 +28,7 @@ def hash():
             print(message.decode('utf-8'))
 
             if(message!=''):
-            showGoogleImgSearch(message)
+                showGoogleImgSearch(message)
 
     except KeyboardInterrupt:
         pass
