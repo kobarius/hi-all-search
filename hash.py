@@ -4,9 +4,9 @@ import configparser
 
 # --- from Other File
 from getAPIkey import getAPIkey
-from listen import sound2word
-from recognize import sound2word
-from showGoogleImgSearch import getImage
+from sound2word import listen
+from sound2word import recognize
+from getImage import showGoogleImgSearch
 
 
 def hash():
