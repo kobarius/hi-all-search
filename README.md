@@ -1,34 +1,21 @@
 # hi-all-search
+
 search all you say
 
-# quick start
-`python getImage.py`
-
-# use as lib
+## Usage
+ 1. 音声データ操作用にsox（Sound eXchange）ライブラリをインストール
 ```
-import getImage
-words = ['tomato', 'gorira', 'iphone', 'shimane']
-for word in words:
-    getImage.showGoogleImgSearch(word)
+$ sudo apt-get install alsa-utils sox libsox-fmt-all
+```
+ 2. 「congfig.ini」でGoogle SpeechのAPIキーを指定
+```
+GOOGLE_API_KEY = Set_Your_Google_API_KEY
+```
+ 3. 実行
+```
+$ python hash.py
 ```
 
-# 処理の流れ
-音声
-
-↓ (まだない)
-
-word
-
-↓  (getImage.py)
-
-画像
-
-# ひとりごと
-- 早く実装したい → google画像検索の画面でよくね?
-- 誰か音声認識部分やって
-- python2 でも 3でも動くと思うたぶん
-- 基本python3系にしてほしい
-
-# environment
-- python3.3 or later
-- chrome (maybe any web browser is ok)
+## Requirement
+- OS：Linux（Raspbian,Ubuntuで動作確認済）
+- Python：3.x系（2系では動きません）
