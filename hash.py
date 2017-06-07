@@ -30,6 +30,10 @@ def hash():
             message = recognize(API_KEY,VOICE_IN_PATH)
             print(message)
 
+            message = message.strip()
+            message = message.replace(u" ","")
+            message = message.replace(u"　","")
+
             if(message!=''):
                 showGoogleImgSearch(message)
 
