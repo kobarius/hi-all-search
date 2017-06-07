@@ -23,12 +23,15 @@ def hash():
 
     try:
         while True:
-            listen(5,VOICE_IN_PATH)
-            message = recognize(API_KEY,VOICE_IN_PATH).encode('utf-8')
-            print(message.decode('utf-8'))
+            #message = recognize(API_KEY,VOICE_IN_PATH).encode('utf-8')
+            #message = recognize(API_KEY,VOICE_IN_PATH).encode('utf-8')
+            #print(message.decode('utf-8'))
+            listen(LISTEN_SECONDS,VOICE_IN_PATH)
+            message = recognize(API_KEY,VOICE_IN_PATH)
+            print(message)
 
             if(message!=''):
-                showGoogleImgSearch(str(message))
+                showGoogleImgSearch(message)
 
     except KeyboardInterrupt:
         pass
