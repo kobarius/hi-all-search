@@ -21,4 +21,4 @@ $ python hash.py
 - Python：3.x系（2系では動きません）
 
 ## Reference
-- 「[自然会話ロボットを作ろう! RaspberryPiとArduinoで作る人工知能](https://www.amazon.co.jp/dp/4798048631)」, 鄭立 (2016), ISBN:978-4798048635
+- 鄭立 (2016), [自然会話ロボットを作ろう!：RaspberryPiとArduinoで作る人工知能](https://www.amazon.co.jp/dp/4798048631)」, 秀和システム
